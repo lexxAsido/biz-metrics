@@ -114,32 +114,9 @@ const [user, setUser] = useState<User | null>(null);
             </>
           ) : (
             <>
-              {/* Dropdown Menu */}
-              <DropdownMenu>
-                <DropdownMenuTrigger className="outline-none flex items-center gap-2">
-                <Avatar>
-                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                    <AvatarFallback>CN</AvatarFallback>
-                  </Avatar>
+             
 
-                  <span className="hidden sm:block">Welcome, {user.username || "User"}!</span>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-white shadow-lg rounded-md mt-2">
-                  <DropdownMenuLabel className="text-lg font-bold text-black">{user.username || user.email}</DropdownMenuLabel>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem className="hover:bg-red-600 hover:text-white">
-                    <Link href="/profile">Profile</Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="hover:bg-red-600 hover:text-white">
-                    <Link href="/contact">Contact Us</Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="hover:bg-red-600 hover:text-white">
-                    <Link href="/about">About Us</Link>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-
-              {/* Sign Out Button */}
+             
               <button
                 onClick={handleSignOut}
                 disabled={signingOut}
