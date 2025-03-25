@@ -87,6 +87,10 @@ const Dashboard = () => {
   const users = [
     { id: 1, name: "Alex Him", email: "alex@example.com", sales: "$500" },
     { id: 2, name: "Micheal Lenon", email: "lenon@example.com", sales: "$750" },
+    { id: 3, name: "Cherish moe", email: "moe@example.com", sales: "$950" },
+    { id: 4, name: "Daniel Morgan", email: "daniel@example.com", sales: "$800" },
+    { id: 5, name: "Emma Akpan", email: "Akpan@example.com", sales: "$1050" },
+    { id: 6, name: "Jonah Mba", email: "mba@example.com", sales: "$250" },
   ];
 
   return (
